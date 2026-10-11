@@ -1,0 +1,8 @@
+name: spike-probe
+on: [push, create]
+jobs:
+  probe:
+    if: ${{ false }}
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo never
